@@ -6,5 +6,5 @@ module.exports = {
     title: `gatsby-theme-tut`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: [],
-}
+  plugins: ["gatsby-plugin-sass"],
+};

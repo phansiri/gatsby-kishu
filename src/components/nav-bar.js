@@ -24,7 +24,7 @@ const NavBar = () => {
             <span aria-hidden="true"></span>
           </a>
         </div>
-        <div className={toggleMenu ? "navbar-menu is-active" : "navbar-menu"}>
+        <div className={toggleMenu ? "navbar-menu" : "navbar-menu is-active"}>
           <div className="navbar-end">
             <a class="navbar-item">Products</a>
             <a class="navbar-item">Location</a>

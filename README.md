@@ -7,6 +7,9 @@
   Gatsby Minimal Starter
 </h1>
 
+## Color Palette
+(Color Hunt)[https://colorhunt.co/palette/edf1d69dc08b60996640513b]
+
 ## 🚀 Quick start
 
 1.  **Create a Gatsby site.**

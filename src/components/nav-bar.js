@@ -1,36 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 
 const NavBar = () => {
+  const [toggleMenu, setToggleMenu] = useState(true);
   return (
     <section>
-      <header className="navbar">
-        <div className="container">
-          <div className="navbar-brand">
-            <a className="navbar-item">
-              <p>Logo</p>
-            </a>
-            <span className="navbar-burger" data-target="navbarMenuHeroC">
-              <span></span>
-              <span></span>
-            </span>
-          </div>
-          <div id="navbarMenuHeroC" className="navbar-menu">
-            <div className="navbar-end">
-              <a className="navbar-item is-active">Home</a>
-              <a className="navbar-item">Examples</a>
-              <a className="navbar-item">Documentation</a>
-              <span className="navbar-item">
-                <a className="button is-success is-inverted">
-                  <span className="icon">
-                    <i className="fab fa-github"></i>
-                  </span>
-                  <span>Download</span>
-                </a>
-              </span>
-            </div>
+      <nav
+        className="container navbar is-fixed-top"
+        role="navigation"
+        aria-label="main navigation"
+      >
+        <div className="navbar-brand">
+          <a className="navbar-item" href="https://bulma.io">
+            Kishu Uoko
+          </a>
+          <a
+            role="button"
+            className="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            onClick={() => setToggleMenu(!toggleMenu)}
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div className={toggleMenu ? "navbar-menu is-active" : "navbar-menu"}>
+          <div className="navbar-end">
+            <a class="navbar-item">Products</a>
+            <a class="navbar-item">Location</a>
+            <a class="navbar-item">About Us</a>
           </div>
         </div>
-      </header>
+      </nav>
     </section>
   );
 };

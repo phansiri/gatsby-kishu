@@ -3,4 +3,40 @@
 // If need, change your variables before importing Bulma
 $title-color: blue;
 
+#padding-gap-top {
+  padding-top: 20px
+}
+#title-spacing {
+  padding-top: 47px;
+  padding-bottom: 47px
+}
+#product-background {
+  background-color: #fbfbfd;
+}
+#product-smooth-anchor {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/**
+ * Disable smooth scrolling when users have prefers-reduced-motion enabled
+ */
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+// #overall {
+//   font-family: 
+//   "Roboto",
+//   "Helvetica Neue",
+//   "Helvetica",
+//   "Arial",
+//   sans-serif
+// }
+
+
 @import "~bulma/bulma.sass";

@@ -26,9 +26,11 @@ const NavBar = () => {
         </div>
         <div className={toggleMenu ? "navbar-menu" : "navbar-menu is-active"}>
           <div className="navbar-end">
-            <a class="navbar-item">Products</a>
-            <a class="navbar-item">Location</a>
-            <a class="navbar-item">About Us</a>
+            <a className="navbar-item" href="#product-smooth-anchor">
+              Products
+            </a>
+            <a className="navbar-item">Location</a>
+            <a className="navbar-item">About Us</a>
           </div>
         </div>
       </nav>

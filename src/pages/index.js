@@ -3,6 +3,8 @@ import * as React from "react";
 import Footer from "../components/footer";
 import Hero from "../components/hero";
 import Products from "../components/products";
+import Location from "../components/location";
+import AboutUs from "../components/about-us";
 import Divider from "../components/divider";
 
 const IndexPage = () => {
@@ -12,6 +14,9 @@ const IndexPage = () => {
       <Divider />
       <Products />
       <Divider />
+      <Location />
+      <Divider />
+      <AboutUs />
       <Footer />
     </div>
   );
